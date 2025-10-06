@@ -1,6 +1,7 @@
-*,
-*::before,
-*::after {
+/* ===============================
+   CSS Reset and Base Styles
+   =============================== */
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -12,12 +13,7 @@ body {
   line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
@@ -30,8 +26,7 @@ a {
   text-decoration: none;
 }
 
-input,
-textarea {
+input, textarea {
   width: 100%;
   padding: 0.5rem;
   border: 1px solid #ccc;
@@ -39,6 +34,9 @@ textarea {
   font-size: 1rem;
 }
 
+/* ===============================
+   Header and Footer Styles
+   =============================== */
 .header__top-bar {
   background-color: var(--bs-light);
   color: var(--bs-dark);
@@ -51,11 +49,13 @@ textarea {
   background-color: var(--bs-red);
 }
 
+/* ===============================
+   Button Styles
+   =============================== */
 .top-bar__get-quote-btn {
   background-color: var(--bs-white, #fff);
   border-color: var(--bs-purple);
   color: var(--bs-black, #000);
-
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
     color 0.15s ease-in-out;
 }
@@ -72,11 +72,14 @@ textarea {
   }
 }
 
+/* ===============================
+   Swiper Styles
+   =============================== */
 .hero-swiper {
   height: 400px;
 }
 
-.testimonials__avatar {
+testimonials__avatar {
   width: 50px;
   height: 50px;
 }
@@ -93,6 +96,9 @@ textarea {
   color: var(--bs-white);
 }
 
+/* ===============================
+   Product Card Styles
+   =============================== */
 .product-card img {
   transition: transform 0.3s ease-in-out;
 }
