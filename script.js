@@ -1,132 +1,32 @@
-const heroSwiper = new Swiper(".hero-swiper", {
-  autoplay: {
-    delay: 5000,
-  },
+"use strict";
 
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
+/**
+ * Helper function to initialize Swiper carousels with shared config.
+ * @param {string} selector - CSS selector for Swiper instance
+ */
+function createSwiper(selector) {
+  return new Swiper(selector, {
+    autoplay: { delay: 5000 },
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
-
-    425: {
-      slidesPerView: 2,
+    breakpoints: {
+      320: { slidesPerView: 1 },
+      425: { slidesPerView: 2 },
+      768: { slidesPerView: 3 },
+      1024: { slidesPerView: 4 },
     },
+    spaceBetween: 20,
+  });
+}
 
-    768: {
-      slidesPerView: 3,
-    },
+// Initialize all Swiper carousels
+createSwiper(".hero-swiper");
+createSwiper(".latest-products-swiper");
+createSwiper(".popular-products-swiper");
+createSwiper(".testimonials-swiper");
 
-    1024: {
-      slidesPerView: 4,
-    },
-  },
-
-  loop: true,
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
-const latestProductsSwiper = new Swiper(".latest-products-swiper", {
-  autoplay: {
-    delay: 5000,
-  },
-
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-    },
-
-    425: {
-      slidesPerView: 2,
-    },
-
-    768: {
-      slidesPerView: 3,
-    },
-
-    1024: {
-      slidesPerView: 4,
-    },
-  },
-
-  loop: true,
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  spaceBetween: 20,
-});
-
-const popularProductsSwiper = new Swiper(".popular-products-swiper", {
-  autoplay: {
-    delay: 5000,
-  },
-
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-    },
-
-    425: {
-      slidesPerView: 2,
-    },
-
-    768: {
-      slidesPerView: 3,
-    },
-
-    1024: {
-      slidesPerView: 4,
-    },
-  },
-
-  loop: true,
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  spaceBetween: 20,
-});
-
-const testimonialsSwiper = new Swiper(".testimonials-swiper", {
-  autoplay: {
-    delay: 5000,
-  },
-
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-    },
-
-    425: {
-      slidesPerView: 2,
-    },
-
-    768: {
-      slidesPerView: 3,
-    },
-
-    1024: {
-      slidesPerView: 4,
-    },
-  },
-
-  loop: true,
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  spaceBetween: 20,
-});
-
-const currentYear = new Date().getFullYear();
-document.getElementById("currentYear").textContent = currentYear;
+// Set current year in the footer
+document.getElementById("currentYear").textContent = new Date().getFullYear();
