@@ -1,178 +1,131 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <style type="text/tailwindcss">
-            @theme {
-            }
-        </style>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+      }
+    </style>
+  </head>
 
-    <body class="bg-gray-100">
-        <div class="mx-auto max-w-4xl space-y-16">
-            <header class="space-y-8 bg-red-800 pb-8">
-                <div
-                    class="flex items-center justify-between p-4 text-stone-100"
-                >
-                    <h1
-                        class="text-4xl font-bold tracking-wider text-shadow-lg md:text-3xl lg:text-4xl"
-                    >
-                        OPS Technologies
-                    </h1>
-                    <nav class="hidden md:block">
-                        <ul class="flex space-x-4">
-                            <li><a href="#" class="">Home</a></li>
-                            <li><a href="#about-us">About us</a></li>
-                            <li><a href="#quick-inquiry">Contact us</a></li>
-                        </ul>
-                    </nav>
-                    <a
-                        href="#quick-inquiry"
-                        class="rounded-lg bg-gray-100 px-4 py-2 font-medium text-rose-700 shadow-sm transition hover:scale-105 hover:bg-rose-50 hover:text-rose-800 active:translate-y-0.5"
-                        >Quick Inquiry</a
-                    >
-                </div>
-
-                <div
-                    class="flex flex-col items-center justify-center space-y-4 px-8"
-                >
-                    <div
-                        class="grid h-44 w-44 place-items-center rounded-full bg-stone-200 text-6xl font-semibold shadow-2xl"
-                    >
-                        OPS
-                    </div>
-                    <h1 class="mb-1 text-4xl tracking-widest text-white">
-                        Om Prakash Singh
-                    </h1>
-                    <p class="text-center tracking-widest text-white">
-                        Founder and Technical Specialist
-                    </p>
-                    <p class="mb-8 text-center tracking-wider text-white">
-                        Professional support focused on erection, commissioning,
-                        and maintenance of Roto Packers. Delivering
-                        reliable, efficient, and safety-oriented services.
-                    </p>
-                    <div
-                        class="space-y-4 rounded-lg border border-rose-700 bg-rose-700 p-4 text-white shadow-md"
-                    >
-                        <a
-                            href="mailto:technologies.ops@gmail.com"
-                            class="flex items-center space-x-2 p-2 transition hover:scale-105 hover:cursor-pointer hover:shadow-sm"
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                class="size-6"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M21.75 9v.906a2.25 2.25 0 0 1-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 0 0 1.183 1.981l6.478 3.488m8.839 2.51-4.66-2.51m0 0-1.023-.55a2.25 2.25 0 0 0-2.134 0l-1.022.55m0 0-4.661 2.51m16.5 1.615a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V8.844a2.25 2.25 0 0 1 1.183-1.981l7.5-4.039a2.25 2.25 0 0 1 2.134 0l7.5 4.039a2.25 2.25 0 0 1 1.183 1.98V19.5Z"
-                                />
-                            </svg>
-                            <span class="tracking-widest"
-                                >TECHNOLOGIES.OPS@GMAIL.COM</span
-                            >
-                        </a>
-                        <a
-                            href="tel:+919650124600"
-                            class="flex items-center space-x-2 p-2 transition hover:scale-105 hover:cursor-pointer hover:shadow-sm"
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                class="size-6"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
-                                />
-                            </svg>
-                            <span class="tracking-widest">+91 9650124 600</span>
-                        </a>
-                    </div>
-                </div>
-            </header>
-
-            <main class="space-y-16 px-8 lg:px-0">
-                <section id="about-us" class="space-y-8">
-                    <h2 class="text-4xl font-bold tracking-wide">About us</h2>
-                    <p class="tracking-wider">
-                        OPS Technologies specializes in delivering advanced
-                        technical services focused on cement plant roto packers.
-                        With extensive experience in installation,
-                        commissioning, and preventive maintenance, the company
-                        ensures consistent operational performance and long-term
-                        equipment reliability.
-                    </p>
-                    <div class="grid grid-cols-1 gap-8 sm:grid-cols-3">
-                        <div
-                            class="rounded-lg bg-linear-to-r from-sky-200 to-cyan-100 p-4 text-center shadow-sm"
-                        >
-                            <p class="mb-2 text-3xl font-bold">40+</p>
-                            <p>Experience</p>
-                        </div>
-                        <div
-                            class="rounded-lg bg-linear-to-r from-amber-200 to-orange-100 p-4 text-center shadow-sm"
-                        >
-                            <p class="mb-2 text-3xl font-bold">100+</p>
-                            <p>Projects completed</p>
-                        </div>
-                        <div
-                            class="rounded-lg bg-linear-to-r from-emerald-200 to-green-100 p-4 text-center shadow-sm"
-                        >
-                            <p class="mb-2 text-3xl font-bold">20+</p>
-                            <p>Clients</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section
-                    id="quick-inquiry"
-                    class="rounded-lg bg-red-50 py-10 shadow-sm"
-                >
-                    <div class="mx-auto flex max-w-lg flex-col gap-6 px-4">
-                        <h2 class="mb-8 text-4xl font-bold">Quick Inquiry</h2>
-                        <input
-                            type="text"
-                            placeholder="Name"
-                            class="rounded-md border border-red-300 bg-white px-4 py-2 text-gray-800 focus:ring-2 focus:ring-red-600 focus:outline-none"
-                        />
-
-                        <input
-                            type="email"
-                            placeholder="Email"
-                            class="rounded-md border border-red-300 bg-white px-4 py-2 text-gray-800 focus:ring-2 focus:ring-red-600 focus:outline-none"
-                        />
-
-                        <input
-                            type="tel"
-                            placeholder="Phone number"
-                            class="rounded-md border border-red-300 bg-white px-4 py-2 text-gray-800 focus:ring-2 focus:ring-red-600 focus:outline-none"
-                        />
-
-                        <button
-                            type="submit"
-                            class="mt-8 rounded-md bg-red-600 px-4 py-2 font-medium text-white transition hover:scale-105 hover:cursor-pointer hover:bg-red-700 active:scale-100"
-                        >
-                            Submit
-                        </button>
-                    </div>
-                </section>
-            </main>
-
-            <footer class="bg-stone-800 py-8 text-center text-neutral-100">
-                <p>&COPY; 2025 OPS Technologies</p>
-            </footer>
+  <body class="bg-gray-100">
+    <div class="mx-auto max-w-4xl space-y-16">
+      <header class="space-y-8 bg-red-800 pb-8">
+        <div class="flex items-center justify-between p-4 text-stone-100">
+          <h1 class="text-4xl font-bold tracking-wider text-shadow-lg md:text-3xl lg:text-4xl">OPS Technologies</h1>
+          <nav class="hidden md:block">
+            <ul class="flex space-x-4">
+              <li><a href="#services" class="">Services</a></li>
+              <li><a href="#about-us">About us</a></li>
+              <li><a href="#quick-inquiry">Contact us</a></li>
+            </ul>
+          </nav>
+          <a href="#quick-inquiry" class="rounded-lg bg-gray-100 px-4 py-2 font-medium text-rose-700 shadow-sm transition hover:scale-105 hover:bg-rose-50 hover:text-rose-800 active:translate-y-0.5">Quick Inquiry</a>
         </div>
-    </body>
+
+        <div class="flex flex-col items-center justify-center space-y-4 px-8">
+          <div class="grid h-44 w-44 place-items-center rounded-full bg-stone-200 text-6xl font-semibold shadow-2xl">OPS</div>
+          <h1 class="mb-1 text-4xl tracking-widest text-white">Om Prakash Singh</h1>
+          <p class="text-center tracking-widest text-white">Founder and Technical Specialist</p>
+          <p class="mb-8 text-center tracking-wider text-white">Professional support focused on erection, commissioning, and maintenance of Roto Packers. Delivering reliable, efficient, and safety-oriented services.</p>
+          <div class="space-y-4 rounded-lg border border-rose-700 bg-rose-700 p-4 text-white shadow-md">
+            <a href="mailto:technologies.ops@gmail.com" class="flex items-center space-x-2 p-2 transition hover:scale-105 hover:cursor-pointer hover:shadow-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 9v.906a2.25 2.25 0 0 1-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 0 0 1.183 1.981l6.478 3.488m8.839 2.51-4.66-2.51m0 0-1.023-.55a2.25 2.25 0 0 0-2.134 0l-1.022.55m0 0-4.661 2.51m16.5 1.615a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V8.844a2.25 2.25 0 0 1 1.183-1.981l7.5-4.039a2.25 2.25 0 0 1 2.134 0l7.5 4.039a2.25 2.25 0 0 1 1.183 1.98V19.5Z" />
+              </svg>
+              <span class="tracking-widest">TECHNOLOGIES.OPS@GMAIL.COM</span>
+            </a>
+            <a href="tel:+919650124600" class="flex items-center space-x-2 p-2 transition hover:scale-105 hover:cursor-pointer hover:shadow-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+              </svg>
+              <span class="tracking-widest">+91 9650124 600</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main class="space-y-16 px-8 lg:px-0">
+        <section id="about-us" class="space-y-8">
+          <h2 class="text-4xl font-bold tracking-wide">About us</h2>
+          <p class="tracking-wider">OPS Technologies specializes in delivering advanced technical services focused on cement plant roto packers. With extensive experience in installation, commissioning, and preventive maintenance, the company ensures consistent operational performance and long-term equipment reliability.</p>
+          <div class="grid grid-cols-1 gap-8 sm:grid-cols-3">
+            <div class="rounded-lg bg-linear-to-r from-sky-200 to-cyan-100 p-4 text-center shadow-sm">
+              <p class="mb-2 text-3xl font-bold">40+</p>
+              <p>Experience</p>
+            </div>
+            <div class="rounded-lg bg-linear-to-r from-amber-200 to-orange-100 p-4 text-center shadow-sm">
+              <p class="mb-2 text-3xl font-bold">100+</p>
+              <p>Projects completed</p>
+            </div>
+            <div class="rounded-lg bg-linear-to-r from-emerald-200 to-green-100 p-4 text-center shadow-sm">
+              <p class="mb-2 text-3xl font-bold">20+</p>
+              <p>Clients</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="services" class="space-y-8">
+          <h2 class="text-4xl font-bold tracking-wide">Services</h2>
+          <p class="tracking-wider">OPS Technologies specializes in delivering advanced technical services focused on cement plant roto packers. With extensive experience in installation, commissioning, and preventive maintenance, the company ensures consistent operational performance and long-term equipment reliability.</p>
+
+          <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="group h-48 perspective-distant lg:h-96">
+              <div class="relative h-full w-full transition duration-700 transform-3d group-hover:rotate-y-180">
+                <div class="absolute grid h-full w-full place-items-center rounded-lg bg-linear-to-r from-emerald-400 to-green-200 text-center text-3xl font-bold shadow-md/20 backface-hidden md:text-2xl lg:h-96">AMC</div>
+
+                <div class="absolute grid h-full w-full rotate-y-180 place-items-center rounded-lg bg-linear-to-r from-zinc-200 to-gray-100 p-4 text-center font-semibold shadow-md/20 backface-hidden md:text-left md:text-lg lg:h-96">Comprehensive annual maintenance support including preventive inspections, and component health monitoring to ensure continuous, reliable operation.</div>
+              </div>
+            </div>
+
+            <div class="group h-48 perspective-distant lg:h-96">
+              <div class="relative h-full w-full transition duration-700 transform-3d group-hover:rotate-y-180">
+                <div class="absolute grid h-full w-full place-items-center rounded-lg bg-linear-to-r from-sky-400 to-cyan-200 text-center text-3xl font-bold shadow-md/20 backface-hidden md:text-xl lg:h-96">
+                  Erection & <br />
+                  Commissioning
+                </div>
+                <div class="absolute grid h-full w-full rotate-y-180 place-items-center rounded-lg bg-linear-to-r from-zinc-200 to-gray-100 p-4 text-center font-semibold shadow-md/20 backface-hidden md:text-left md:text-lg lg:h-96">Complete erection and commissioning services covering mechanical assembly, alignment, load testing, and validation to achieve safe, efficient start-up.</div>
+              </div>
+            </div>
+
+            <div class="group h-48 perspective-distant lg:h-96">
+              <div class="relative h-full w-full transition duration-700 transform-3d group-hover:rotate-y-180">
+                <div class="absolute grid h-full w-full place-items-center rounded-lg bg-linear-to-r from-orange-400 to-red-200 p-4 text-center text-3xl font-bold shadow-md/20 backface-hidden md:text-xl lg:h-96">
+                  Troubleshooting & <br />
+                  Diagnostics
+                </div>
+                <div class="absolute grid h-full w-full rotate-y-180 place-items-center rounded-lg bg-linear-to-r from-zinc-200 to-gray-100 p-4 text-center font-semibold shadow-md/20 backface-hidden md:text-left md:text-lg lg:h-96">Rapid fault detection and diagnostic services focused on identifying issues, and restoring equipment functionality with minimal downtime.</div>
+              </div>
+            </div>
+
+            <div class="group h-48 perspective-distant lg:h-96">
+              <div class="relative h-full w-full transition duration-700 transform-3d group-hover:rotate-y-180">
+                <div class="absolute grid h-full w-full place-items-center rounded-lg bg-linear-to-r from-indigo-400 to-blue-200 text-center text-3xl font-bold shadow-md/20 backface-hidden md:text-xl lg:h-96">Training</div>
+                <div class="absolute grid h-full w-full rotate-y-180 place-items-center rounded-lg bg-linear-to-r from-zinc-200 to-gray-100 p-4 text-center font-semibold shadow-md/20 backface-hidden md:text-left md:text-lg lg:h-96">Structured training programs covering equipment operation, troubleshooting methods, safety practices, and performance optimization for plant teams.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="quick-inquiry" class="rounded-lg bg-red-50 py-10 shadow-sm">
+          <div class="mx-auto flex max-w-lg flex-col gap-6 px-4">
+            <h2 class="mb-8 text-4xl font-bold">Quick Inquiry</h2>
+            <input type="text" placeholder="Name" class="rounded-md border border-red-300 bg-white px-4 py-2 text-gray-800 focus:ring-2 focus:ring-red-600 focus:outline-none" />
+
+            <input type="email" placeholder="Email" class="rounded-md border border-red-300 bg-white px-4 py-2 text-gray-800 focus:ring-2 focus:ring-red-600 focus:outline-none" />
+
+            <input type="tel" placeholder="Phone number" class="rounded-md border border-red-300 bg-white px-4 py-2 text-gray-800 focus:ring-2 focus:ring-red-600 focus:outline-none" />
+
+            <button type="submit" class="mt-8 rounded-md bg-red-600 px-4 py-2 font-medium text-white transition hover:scale-105 hover:cursor-pointer hover:bg-red-700 active:scale-100">Submit</button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="bg-stone-800 py-8 text-center text-neutral-100">
+        <p>&COPY; 2025 OPS Technologies</p>
+      </footer>
+    </div>
+  </body>
 </html>
